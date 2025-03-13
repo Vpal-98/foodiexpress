@@ -11,12 +11,14 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: "lato", sans-serif;
   color: #333;
   font-size: 1.8rem;
   line-height: 1.6;
+  max-width: 1200px;
 }
 
 ul {
@@ -191,6 +193,7 @@ nav {
     background-color: #048e7c74;
     padding: 2rem;
     backdrop-filter: blur(5px);
+    overflow: hidden;
   }
   .hero-section {
     text-align: center;
@@ -211,5 +214,11 @@ nav {
 
   button.navbar-toggler {
     border-color: #fff;
+  }
+  .hero-img {
+    flex-direction: column;
+  }
+  .featured .card {
+    margin-bottom: 20px;
   }
 }
